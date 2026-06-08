@@ -1,0 +1,15 @@
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\bin\Debug\net10.0\AbitElit.BusinessLogic.deps.json
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\bin\Debug\net10.0\AbitElit.BusinessLogic.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\bin\Debug\net10.0\AbitElit.BusinessLogic.pdb
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\bin\Debug\net10.0\AbitElit.DataAccess.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\bin\Debug\net10.0\AbitElit.DataAccess.pdb
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.csproj.AssemblyReference.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.AssemblyInfoInputs.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.AssemblyInfo.cs
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.81CD8A67.Up2Date
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\refint\AbitElit.BusinessLogic.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\AbitElit.BusinessLogic.pdb
+C:\_dev\aspnet\ElitAbit\AbitElit.BusinessLogic\obj\Debug\net10.0\ref\AbitElit.BusinessLogic.dll

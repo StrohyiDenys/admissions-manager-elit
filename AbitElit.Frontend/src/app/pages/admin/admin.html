@@ -1,0 +1,108 @@
+
+<nav class="navbar navbar-dark bg-dark px-4 shadow-sm">
+  <span class="navbar-brand mb-0 h1">Система обліку абітурієнтів ЕЛІТ</span>
+  <div class="d-flex align-items-center">
+    <span class="text-white me-3">Роль: {{ role }}</span>
+    <button class="btn btn-outline-light btn-sm" (click)="logout()">Вихід</button>
+  </div>
+</nav>
+
+<div class="container-fluid mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <button class="btn btn-secondary d-flex align-items-center" (click)="toggleFilter()">
+      <span class="me-2">Фільтрувати</span>
+      <span>{{ isFilterOpen ? '▼' : '▶' }}</span>
+    </button>
+
+    <div class="d-flex gap-2">
+      <button class="btn btn-outline-primary" (click)="dummyUpload()">Завантажити БД з файлу</button>
+      <button class="btn btn-success" (click)="exportWord()">Завантажити як Word</button>
+      <button class="btn btn-primary fw-bold" (click)="openAddModal()">+ Додати новий запис</button>
+    </div>
+  </div>
+
+  <div class="card shadow-sm mb-4" *ngIf="isFilterOpen">
+    <div class="card-body bg-light">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-5">
+          <label class="form-label text-muted small fw-bold">Бал за іспит більший за ></label>
+          <input type="number" class="form-control" [(ngModel)]="filterMinScore" placeholder="Наприклад, 150">
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-muted small fw-bold">Номер школи</label>
+          <input type="number" class="form-control" [(ngModel)]="filterSchool" placeholder="№">
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary w-100" (click)="applyFilter()">Пошук</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow-sm">
+    <div class="card-body p-0">
+      <table class="table table-hover table-striped mb-0 align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Прізвище</th>
+            <th>Ім’я</th>
+            <th>Бал за іспит</th>
+            <th>Номер школи</th>
+            <th class="text-end">Дії</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="applicants.length === 0">
+            <td colspan="6" class="text-center py-3">Немає даних для відображення</td>
+          </tr>
+          <tr *ngFor="let a of applicants">
+            <td>{{ a.id }}</td>
+            <td>{{ a.lastName }}</td>
+            <td>{{ a.firstName }}</td>
+            <td>{{ a.examScore }}</td>
+            <td>{{ a.schoolNumber }}</td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary me-2" (click)="openEditModal(a)">✎ Редагувати</button>
+              <button class="btn btn-sm btn-outline-danger" (click)="deleteApplicant(a.id)">✖ Видалити</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div class="custom-modal-backdrop" *ngIf="showModal">
+  <div class="custom-modal-card shadow">
+    <div class="modal-header d-flex justify-content-between align-items-center mb-3">
+      <h5 class="m-0 fw-bold">{{ modalTitle }}</h5>
+      <button class="btn-close" (click)="closeModal()"></button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="mb-2">
+        <label class="form-label">Прізвище</label>
+        <input type="text" class="form-control" [(ngModel)]="currentApplicant.lastName">
+      </div>
+      <div class="mb-2">
+        <label class="form-label">Ім’я</label>
+        <input type="text" class="form-control" [(ngModel)]="currentApplicant.firstName">
+      </div>
+      <div class="mb-2">
+        <label class="form-label">Бал за іспит</label>
+        <input type="number" step="0.1" class="form-control" [(ngModel)]="currentApplicant.examScore">
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Номер школи</label>
+        <input type="number" class="form-control" [(ngModel)]="currentApplicant.schoolNumber">
+      </div>
+
+      <div class="d-flex justify-content-end gap-2">
+        <button class="btn btn-secondary" (click)="closeModal()">Скасувати</button>
+        <button class="btn btn-primary" (click)="saveApplicant()">Зберегти</button>
+      </div>
+    </div>
+  </div>
+</div>

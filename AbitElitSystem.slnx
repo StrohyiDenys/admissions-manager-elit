@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AbitElit.BusinessLogic/AbitElit.BusinessLogic.csproj" />
+  <Project Path="AbitElit.DataAccess/AbitElit.DataAccess.csproj" />
+  <Project Path="AbitElit.WebApi/AbitElit.WebApi.csproj" />
+</Solution>

@@ -1,0 +1,63 @@
+<nav class="navbar navbar-dark bg-dark px-4 shadow-sm">
+  <span class="navbar-brand mb-0 h1">Система обліку абітурієнтів ЕЛІТ</span>
+  <div class="d-flex align-items-center">
+    <span class="text-white me-3">Роль: {{ role }}</span>
+    <button class="btn btn-outline-light btn-sm" (click)="logout()">Вихід</button>
+  </div>
+</nav>
+
+<div class="container-fluid mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <button class="btn btn-secondary d-flex align-items-center" (click)="toggleFilter()">
+      <span class="me-2">Фільтрувати</span>
+    </button>
+
+    <button class="btn btn-success" (click)="exportWord()">Завантажити як Word</button>
+  </div>
+
+  <div class="card shadow-sm mb-4" *ngIf="isFilterOpen">
+    <div class="card-body bg-light">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-5">
+          <label class="form-label text-muted small fw-bold">Бал за іспит більший за ></label>
+          <input type="number" class="form-control" [(ngModel)]="filterMinScore" placeholder="Наприклад, 150">
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-muted small fw-bold">Номер школи</label>
+          <input type="number" class="form-control" [(ngModel)]="filterSchool" placeholder="№">
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary w-100" (click)="applyFilter()">Пошук</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow-sm">
+    <div class="card-body p-0">
+      <table class="table table-hover table-striped mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Прізвище</th>
+            <th>Ім’я</th>
+            <th>Бал за іспит</th>
+            <th>Номер школи</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="applicants.length === 0">
+            <td colspan="5" class="text-center py-3">Немає даних для відображення</td>
+          </tr>
+          <tr *ngFor="let a of applicants">
+            <td>{{ a.id }}</td>
+            <td>{{ a.lastName }}</td>
+            <td>{{ a.firstName }}</td>
+            <td>{{ a.examScore }}</td>
+            <td>{{ a.schoolNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\bin\Debug\net10.0\AbitElit.DataAccess.deps.json
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\bin\Debug\net10.0\AbitElit.DataAccess.runtimeconfig.json
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\bin\Debug\net10.0\AbitElit.DataAccess.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\bin\Debug\net10.0\AbitElit.DataAccess.pdb
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.csproj.AssemblyReference.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.AssemblyInfoInputs.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.AssemblyInfo.cs
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.csproj.CoreCompileInputs.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\refint\AbitElit.DataAccess.dll
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.pdb
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\AbitElit.DataAccess.genruntimeconfig.cache
+C:\_dev\aspnet\ElitAbit\AbitElit.DataAccess\obj\Debug\net10.0\ref\AbitElit.DataAccess.dll
