@@ -23,7 +23,7 @@ A full-stack web application for managing student admissions. Built with a clean
 
 ---
 
-# AbitElit - Система обліку абітурієнтів 🎓
+# AbitElit - Система обліку абітурієнтів факультету ЕЛIТ🎓
 
 Full-stack веб-застосунок для управління даними абітурієнтів. Побудований за N-Tier архітектурою з чітким розділенням API, бізнес-логіки та роботи з даними.
 
